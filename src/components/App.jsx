@@ -3,6 +3,7 @@ import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
+import { GlobalStyle } from './GlobalStyle';
 
 export class App extends Component {
   state = {
@@ -56,6 +57,7 @@ export class App extends Component {
               positivePercentage={positivePercentage}
             />
           )}
+          <GlobalStyle />
         </Section>
       </>
     );

@@ -1,26 +1,34 @@
+import {
+  StatisticsText,
+  StatisticsTextGood,
+  StatisticsTextNeutral,
+  StatisticsTextBad,
+  StatisticsTextTotal,
+} from './Statistics.styled';
+
 export function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <div>
-      <p>
+      <StatisticsTextGood>
         <span>Good: </span>
         {good}
-      </p>
-      <p>
+      </StatisticsTextGood>
+      <StatisticsTextNeutral>
         <span>Neutral: </span>
         {neutral}
-      </p>
-      <p>
+      </StatisticsTextNeutral>
+      <StatisticsTextBad>
         <span>Bad: </span>
         {bad}
-      </p>
-      <p>
+      </StatisticsTextBad>
+      <StatisticsTextTotal>
         <span>Total: </span>
         {total}
-      </p>
-      <p>
+      </StatisticsTextTotal>
+      <StatisticsText>
         <span>Positive Feedback Percentage: </span>
         {positivePercentage} %
-      </p>
+      </StatisticsText>
     </div>
   );
 }
